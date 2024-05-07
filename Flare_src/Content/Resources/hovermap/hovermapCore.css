@@ -1,0 +1,64 @@
+﻿.hoverMap {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+    margin: 8px;
+}
+.hoverMap img, .hoverMap p {
+    margin:	0;
+    padding: 0;
+    border: 0;
+}
+.overlay {
+    background:rgba(0, 0, 0, .45);
+    opacity:0;
+    -webkit-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.hoverMap .mapLink {
+    display: block;
+    position: absolute;
+    text-indent: -999em;
+    overflow: hidden;
+}
+.hoverMap:hover .overlay {
+    opacity: 1;
+}
+.imageMapPop {
+   	display: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.popUp {
+    font-size: 12pt;
+    padding: 8px;
+    max-width: 600px;
+    max-height: 500px;
+    overflow: auto;
+    border-radius: 0;
+}
+.mapLink:hover {
+	cursor: default;
+}
+.mapLink {
+	animation-name: pulse;
+	animation-duration: 5s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+@keyframes pulse {
+	0% {opacity: 0;} 
+	30% {opacity: .7;} 
+	40% {opacity: .7;} 
+	80% {opacity: 0;} 
+	100% {opacity: 0;}
+}

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="216" MadCap:lastWidth="1312">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link MadCap:conditions="Primary.WindowsOnly" href="../images/favicon.png" rel="icon" />
+		<link MadCap:conditions="Primary.MacOnly" href="../images/faviconmac.png" rel="icon" />
+        <script src="https://use.fontawesome.com/870d120522.js">
+        </script>
+        <link href="../Stylesheets/default.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+		<div class="content-container">
+        <div class="ContentRow">
+            <div>
+                <MadCap:breadcrumbsProxy />
+                <MadCap:bodyProxy />
+            </div>
+            <div>
+                <div id="page-toc">
+                </div>
+                <MadCap:relationshipsProxy />
+            </div>
+        </div>
+			</div>
+    </body>
+    <script type="text/javascript" src="../Scripts/page-toc.js">
+    </script>
+</html>

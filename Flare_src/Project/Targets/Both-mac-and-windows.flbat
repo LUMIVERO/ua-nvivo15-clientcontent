@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultBatchTarget
+  Version="1"
+  Comment="New Batch Target">
+  <Targets>
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="mac-help"
+      Type="HTML5"
+      Build="true"
+      Publish="false"
+      LastBuilt="2018-06-13T15:43:41.4359889+10:00" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="windows-help"
+      Type="HTML5"
+      Build="true"
+      Publish="false"
+      LastBuilt="2018-06-06T10:22:43.6139064+10:00" />
+  </Targets>
+</CatapultBatchTarget>

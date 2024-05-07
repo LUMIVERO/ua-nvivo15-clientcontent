@@ -1,0 +1,1243 @@
+/*<meta />*/
+
+@import url('https://help-nv.qsrinternational.com/12/win/v12.1.87-d3ea61/Content/Resources/hovermap/hovermapCore.css');
+
+@import url('https://help-nv.qsrinternational.com/12/win/v12.1.87-d3ea61/Content/Resources/hovermap/hovermapHotspots.css');
+
+@import url('https://help-nv.qsrinternational.com/12/win/v12.1.87-d3ea61/Content/Resources/qtip2/jquery.qtip.css');
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap');
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+/* Setup */
+
+html
+{
+	/* Change default typefaces here */
+	font-family: Segoe UI, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	color: #333;
+	font-family: 'Lato';
+	font-weight: 400;
+}
+
+body
+{
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.TableStyle-table-grey
+{
+	border-radius: 4px;
+	overflow: hidden;
+	border: 0px;
+	background: #f9f9f9;
+	box-shadow: inset 0px 0px 1px #bbb;
+	width: 100% !important;
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+.TableStyle-table-grey td
+{
+	padding: 12px 15px;
+}
+
+.TableStyle-table-grey-HeadE-Column1-Header1,
+.TableStyle-table-grey-HeadD-Column2-Header1
+{
+	background-color: #0D4E90;
+	font-size: 17px;
+	font-weight: 600;
+	padding: 10px 15px 12px 15px;
+}
+
+/* Copy & Lists */
+
+p
+{
+	margin-top: 18px;
+	margin-bottom: 0;
+}
+
+p.nospaceabove
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+p.extraspaceabove
+{
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+p.spacetopbottom
+{
+	margin-top: 18px;
+	margin-bottom: 18px;
+}
+
+p.code
+{
+	font-family: Lucida Console;
+	font-size: 14px;
+}
+
+p.Note
+{
+	mc-auto-number-format: '{b}NOTE  {/b}';
+	margin-top: 20px;
+	-moz-border-radius-bottomleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-bottom-left-border-radius: 6px;
+	-webkit-bottom-right-border-radius: 6px;
+	background-color: #f1f1f1;
+	margin-right: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-left-style: dashed;
+	border-left-width: 1px;
+	border-left-color: #404040;
+	border-right-style: dashed;
+	border-right-width: 1px;
+	border-right-color: #404040;
+	border-top-style: dashed;
+	border-top-width: 1px;
+	border-top-color: #404040;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-bottom-color: #404040;
+	overflow: auto;
+}
+
+p.Important
+{
+	mc-auto-number-format: '{b}IMPORTANT  {/b}';
+}
+
+p.Caution
+{
+	mc-auto-number-format: '{b}CAUTION  {/b}';
+}
+
+p.Tip
+{
+	mc-auto-number-format: '{b}TIP  {/b}';
+}
+
+span.edition
+{
+	font-size: 11px;
+	margin-bottom: 0pt;
+	background-color: #e6e6e6;
+}
+
+span.macexclude
+{
+	background-color: #efefef;
+}
+
+span.shortcut-emphasis
+{
+	color: #808080;
+	font-weight: bold;
+}
+
+ul,
+ol
+{
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+ul li,
+ol li
+{
+	line-height: 24px;
+}
+
+ul ul
+{
+	list-style-type: square;
+}
+
+ol ol
+{
+	list-style-type: lower-roman;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ol.calloutnumbers
+{
+	list-style-type: none;
+	counter-reset: calloutnumbers;
+}
+
+ol.calloutnumbers li
+{
+	counter-increment: calloutnumbers;
+}
+
+ol.calloutnumbers li::before
+{
+	content: counter(calloutnumbers) ' ';
+	color: #0269AE;
+	font-weight: bold;
+	font-size: 18px;
+	padding-right: 10px;
+}
+
+h3 + ul
+{
+	margin-top: 0;
+}
+
+li p
+{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+li.has-children
+{
+	margin-top: 15px;
+}
+
+ul.fa-ul li
+{
+	line-height: 44px;
+	margin-left: 15px;
+}
+
+.aside
+{
+	font-size: 16px;
+	line-height: 20px;
+	font-style: normal;
+	font-weight: 400;
+	float: right;
+	width: 200px;
+	padding: 25px;
+	background-color: #fff;
+	margin: 0 0 50px 25px;
+	display: inline;
+	box-shadow: -2px 2px 0 #dedede;
+}
+
+blockquote
+{
+	font-size: 24px;
+	line-height: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-weight: 300;
+	font-style: italic;
+}
+
+img	/*Setting max-width: 100%; property makes images always fit the width of the container*/
+{
+	max-width: 100%;
+}
+
+/* Links */
+
+a
+{
+	font-size: inherit;
+	text-decoration: none;
+	color: #0269ae;
+}
+
+a:link
+{
+	color: #0269AE;
+}
+
+a:visited
+{
+	color: #0269AE;
+}
+
+a:focus
+{
+	outline: 2px solid grey;
+}
+
+nav li a:focus
+{
+	background-color: grey;
+}
+
+a:hover
+{
+	color: #0269AE;
+	text-decoration: underline;
+}
+
+a:active
+{
+	color: #0269AE;
+}
+
+/* Add visible focus when tabbing around the site*/
+
+a.MCTextPopup
+{
+	color: #333;
+}
+
+a.info
+{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-image: url('../images/info-icon.png');
+	padding-left: 20px;
+}
+
+a.MCXref.xref:before
+{
+	font-family: 'FontAwesome';
+	content: "\f05a";
+	display: inline-block;
+	padding-right: 5px;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	/* Change heading typefaces here */
+	font-family: 'Lato';
+	font-weight: 700;
+	margin-bottom: 0;
+	line-height: 48px;
+}
+
+h1
+{
+	line-height: 54px;
+	color: #0269AE;
+	mc-next-tag: p;
+	font-size: 30px;
+}
+
+h2
+{
+	font-size: 34px;
+	line-height: 46px;
+	margin-top: 36px;
+	color: #231F20;
+	mc-next-tag: p;
+}
+
+h3
+{
+	font-size: 26px;
+	color: #536270;
+	margin-top: 30px;
+	mc-next-tag: p;
+}
+
+h4
+{
+	font-size: 30px;
+}
+
+h5
+{
+	font-size: 24px;
+}
+
+h6
+{
+	font-size: 18px;
+}
+
+/* Tables */
+
+table
+{
+	margin-top: 24px;
+}
+
+table.TableStyletable-grey
+{
+	width: 75% !important;
+}
+
+/* Code blocks */
+
+code
+{
+	vertical-align: bottom;
+}
+
+/* Leading paragraph text */
+
+.lead
+{
+	font-size: 18px;
+}
+
+/* Hug the block above you */
+
+.hug
+{
+	margin-top: 0;
+}
+
+/* Custom spans */
+
+span.UI_Emphasis
+{
+	font-weight: 700;
+	font-size: inherit;
+}
+
+span.bullet_Emphasis
+{
+	font-weight: 700;
+	font-size: inherit;
+	color: #536270;
+}
+
+/* Icons */
+
+.icons
+{
+	font-size: 16px;
+}
+
+.hoverp
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/*==Master Page Topic Layout==*/
+
+.main-section	/*This style applies the grey background. This HTML element is not on a master page, it is used at compile time.*/
+{
+	background: #efefef;
+    height: 100%;
+}
+
+nav.title-bar	/*The background-color applies transparency*/
+{
+	background-color: #000000;
+}
+
+div.content-container	/*Wraps the content on the masterpage and provides the white background behind topics.*/
+{
+	margin-right: 0;
+	background-color: #FFF;
+	padding: 30px;
+	min-height: calc( 100vh - 2em );
+	border-radius: 5px;
+}
+
+div.side-content	/*Container for Menu proxy*/
+{
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 33.33%;
+}
+
+MadCap|breadcrumbsProxy
+{
+	margin-top: 10px;
+	border-bottom: none;
+	font-size: 12px;
+	mc-breadcrumbs-prefix: '';
+	padding-bottom: 0px;
+}
+
+div.MCBreadcrumbsBox_0
+{
+	margin-bottom: 17px;
+	font-size: 0.8em;
+	background-image: url('../images/home-icon.png');
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	padding-left: 25px;
+	padding-bottom: 10px;
+}
+
+/*Add visible focus to navigation bar when tabbing*/
+
+p.Top_of_page
+{
+	margin-top: 9px;
+	margin-bottom: 9px;
+	mc-next-tag: h2;
+}
+
+p.video
+{
+	margin: 0px;
+}
+
+span.Project_Example
+{
+	font-style: italic;
+}
+
+span.Callout_numbers
+{
+	color: #0269AE;
+	font-weight: bold;
+	font-size: 18px;
+	padding-right: 10px;
+}
+
+MadCap|expandingHead.expandspot
+{
+	color: #008000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+
+/* MadCap|dropDown: Drop downs */
+
+MadCap|dropDown
+{
+	mc-image-spacing: 0;
+	mc-open-image: none;
+	mc-closed-image: none;
+	mc-image-position: none;
+}
+
+.dropDown.MCDropDown_Closed > .dropDownHead > .dropDownHotspot:before	/* FontAwesome : fa-arrow-circle-down for closed */
+{
+	font-family: "FontAwesome";
+	content: "\f0ab";
+	padding: 5px 5px 5px 5px;
+	display: inline-block;
+}
+
+.dropDown.MCDropDown_Open > .dropDownHead > .dropDownHotspot:before	/* FontAwesome : fa-arrow-circle-up for open */
+{
+	font-family: "FontAwesome";
+	content: "\f0aa";
+	padding: 5px 5px 5px 5px;
+	display: inline-block;
+}
+
+.dropDownHotspot[name],
+.dropDownHotspot:empty	/* fix for issue where bookmark (which inserts a 'name' property) or an empty tag is included in dropdownhotspot; this extra link tag will cause a duplicate icon, so we need to hide it */
+{
+	display: none;
+}
+
+MadCap|toggler	/* MadCap|toggler: togglers */
+{
+	mc-open-image: none;
+	mc-closed-image: none;
+	mc-image-position: none;
+	mc-image-spacing: 0;
+}
+
+.toggler.MCToggler_Closed:after	/* FontAwesome : fa-angle-down for closed */
+{
+	font-family: "FontAwesome";
+	content: "\f107";
+	padding: 0 0 0 0.5em;
+	display: inline-block;
+}
+
+.toggler.MCToggler_Open:after	/* FontAwesome : fa-angle-up for open */
+{
+	font-family: "FontAwesome";
+	content: "\f106";
+	padding: 0 0 0 0.5em;
+	display: inline-block;
+}
+
+MadCap|expandingBody.expandtext
+{
+	font-style: italic;
+	font-weight: normal;
+	color: #ff0000;
+}
+
+MadCap|glossaryTerm.glossterm
+{
+	color: #800000;
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+}
+
+MadCap|expandingBody.glossterm
+{
+	font-style: italic;
+	font-weight: normal;
+	color: #0000ff;
+}
+
+#page-toc	/* container for topic navigation control */
+{
+	display: none;
+}
+
+div.sidebar
+{
+	background-color: #f0f0f0;
+	display: block;
+	font: normal 14px;
+	line-height: 19px;
+	margin: 70px 0 5px 25px;
+	padding: 12px 0 0 0;
+	width: 250px;
+	outline: 10px solid white;
+	border-bottom-color: #e0e0e0;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-color: #e0e0e0;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #e0e0e0;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #e0e0e0;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+
+.sidebarheading
+{
+	margin-left: 15px;
+	display: inline;
+	font: 16px;
+	height: auto;
+	line-height: 24px;
+	width: auto;
+	color: #0269ae;
+}
+
+div.sidebartoc
+{
+	color: #f7f7f7;
+	display: block;
+	font: normal 13px;
+	line-height: 19px;
+	padding: 7px 0 19px 0;
+	width: 250px;
+}
+
+a.navlinks
+{
+	cursor: pointer;
+	color: #555;
+	letter-spacing: normal;
+	font-weight: normal;
+	font-style: normal;
+	font-family: inherit;
+	text-decoration: none;
+}
+
+a.navlinks:hover
+{
+	text-decoration: underline;
+}
+
+div.sidebartoc li,
+div.sidebartoc ul
+{
+	padding-right: 0;
+	margin-top: 0;
+	padding-left: 0;
+	margin-left: 0;
+	list-style: none;
+	margin-bottom: 0;
+}
+
+.totop
+{
+	float: right;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.totop:hover
+{
+	text-decoration: underline;
+}
+
+.sidebartoc ul li a
+{
+	padding: 5px 15px;
+	display: block;
+	line-height: 19px;
+}
+
+.MCRelationshipsProxy_0
+{
+	background-color: #f0f0f0;
+	display: block;
+	font: 16px;
+	line-height: 12px;
+	margin: 60px 0 5px 25px;
+	padding: 12px 0 20px 0;
+	width: 250px;
+	outline: 10px solid white;
+	border-bottom-color: #e0e0e0;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-color: #e0e0e0;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #e0e0e0;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #e0e0e0;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+
+.MCRelationshipsProxy_0 a,
+.MCRelationshipsProxy_0 a:link,
+.MCRelationshipsProxy_0 a:visited
+{
+	color: #555;
+}
+
+MadCap|relationshipsHeading
+{
+	mc-label: 'Related material';
+	font-size: 12pt;
+}
+
+MadCap|relationshipsHeading.concept
+{
+	mc-label: 'Related material';
+}
+
+p.relatedHeading_related_0
+{
+	color: #0269AE;
+	font: 14px;
+	font-weight: normal;
+	height: auto;
+	line-height: 24px;
+	width: auto;
+	padding-bottom: 5px;
+}
+
+p.conceptHeading_concept_0
+{
+	color: #0269AE;
+	font: 10pt;
+	font-weight: normal;
+	height: auto;
+	line-height: 24px;
+	width: auto;
+	padding-bottom: 5px;
+}
+
+p.relatedItem_related_0
+{
+	font-size: 12pt;
+	margin-left: 0;
+	cursor: pointer;
+	color: #555555 !important;
+	letter-spacing: normal;
+	font-weight: normal;
+	font-style: normal;
+	font-family: inherit;
+	text-decoration: none;
+	margin-left: 0;
+	line-height: 19px;
+}
+
+p.relatedItem_related_0:hover
+{
+	text-decoration: underline;
+}
+
+MadCap|relationshipsProxy
+{
+	border-top-width: 0;
+	border-top-style: none;
+	border-top-color: transparent;
+	padding-left: 15px;
+	padding-top: 1px;
+	margin-top: 20px;
+}
+
+MadCap|relationshipsItem
+{
+	margin-left: 0;
+	mc-leader-offset: 0;
+}
+
+div.Example
+{
+	border-bottom-color: #0269AE;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-left-color: #0269AE;
+	border-left-style: dashed;
+	border-left-width: 1px;
+	border-right-color: #0269AE;
+	border-right-style: dashed;
+	border-right-width: 1px;
+	border-top-color: #0269AE;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-top-style: dashed;
+	border-top-width: 1px;
+	margin-top: 20px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 0;
+	-moz-border-radius-bottomleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-bottom-left-border-radius: 6px;
+	-webkit-bottom-right-border-radius: 6px;
+	background-color: #f0f8ff;
+}
+
+div.Example p
+{
+	margin-top: 12px;
+}
+
+div.Note
+{
+	border-bottom-color: #404040;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-left-color: #404040;
+	border-left-style: dashed;
+	border-left-width: 1px;
+	border-right-color: #404040;
+	border-right-style: dashed;
+	border-right-width: 1px;
+	border-top-color: #404040;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-top-style: dashed;
+	border-top-width: 1px;
+	margin-top: 20px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 0;
+	-moz-border-radius-bottomleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-bottom-left-border-radius: 6px;
+	-webkit-bottom-right-border-radius: 6px;
+	background-color: #f1f1f1;
+}
+
+div.Note > p:first-child
+{
+	font-weight: bold;
+	margin-top: 12px;
+}
+
+div.sideContent
+{
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 33.33%;
+}
+
+div.TopicContent
+{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 25px;
+}
+
+div.TightContent
+{
+	margin: 0;
+	padding: 0;
+	line-height: 1em;
+}
+
+.progress
+{
+	position: relative;
+	width: 600px;
+	border: 1px solid #0269AE;
+	border-radius: 8px;
+	background: #F0F0F0;
+	position: relative;
+	padding: 0px;
+}
+
+.bar
+{
+	background-color: #0269AE;
+	height: 30px;
+	border-radius: 8px 0px 0px 8px;
+}
+
+.percent
+{
+	position: absolute;
+	display: inline-block;
+	top: 3px;
+	left: 48%;
+}
+
+/* Topic Footer */
+
+p.Copyright
+{
+	font-size: 12px;
+	text-align: left;
+	color: #ffffff;
+	line-height: 18px;
+	margin: 0 0 10px 0;
+}
+
+.center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+.footer
+{
+	background-color: #292928;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.footer a
+{
+	text-decoration: none;
+	color: #DADADA;
+}
+
+.footer > div.row
+{
+	line-height: 30px;
+	padding: 0;
+}
+
+.footer-logo
+{
+	max-width: 100%;
+}
+
+.footer-links
+{
+	text-align: left;
+}
+
+.footer-links a
+{
+	padding-right: 15px;
+}
+
+.footer-icons
+{
+	text-align: right;
+}
+
+.footer-icons > a:first-of-type
+{
+	padding-right: 10px;
+}
+
+.buttonslide
+{
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: middle;
+	font: bold 14px Segoe UI;
+	color: #0269AE;
+	text-decoration: none;
+	padding: 5px 9px;
+	border: 2px solid #0269AE;
+	border-radius: 8px;
+	background: #ffffff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+	background: -moz-linear-gradient(top, #ffffff, #ffffff);
+	background: linear-gradient(to bottom, #ffffff, #ffffff);
+}
+
+.buttonslide:hover,
+.buttonslide:focus
+{
+	border: 2px solid #0269AE;
+	background: #ffffff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f0f5));
+	background: -moz-linear-gradient(top, #ffffff, #f5f0f5);
+	background: linear-gradient(to bottom, #ffffff, #f5f0f5);
+	color: #0269AE;
+	text-decoration: none;
+}
+
+.buttonslide:active
+{
+	background: #b3b3b3;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b3b3b3), to(#f5f0f5));
+	background: -moz-linear-gradient(top, #b3b3b3, #f5f0f5);
+	background: linear-gradient(to bottom, #b3b3b3, #f5f0f5);
+}
+
+MadCap|popupHead
+{
+	border-bottom: 2px dotted #0269AE;
+	text-decoration: none;
+	color: #333;
+}
+
+MadCap|popupBody
+{
+	border: solid 2px #536270;
+	background-color: #f0f8ff;
+}
+
+/** Fix for FBL **/
+
+#fbl_thumb_up,
+#fbl_thumb_down
+{
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+div.ContentRow	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.ContentRow::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.ContentRow::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.ContentRow > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.ContentRow > div:nth-child(1)
+{
+	width: 58.333%;
+	margin-left: 0%;
+}
+
+div.ContentRow > div:nth-child(2)
+{
+	width: 33.333%;
+	margin-left: 8.3333%;
+}
+
+div.topic	/* this is a 3 column layout for the topics */
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.topic::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.topic::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.topic > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+div.topic > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.topic > div:nth-child(2)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+div.topic > div:nth-child(3)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+/*===========================================================================================================================================================
+Styles after this point are styles that are for specific mediums. If any additional styles are added to this template they will be listed after mediums.
+[@media tablet] declares styles that will apply when the screen is in tablet view
+[@media mobile] declares styles that will apply when the screen is in mobile view
+===========================================================================================================================================================*/
+
+@media only screen and (max-width: 1279px)
+{
+	div.ContentRow > div:nth-child(1)
+	{
+		width: 66.66667%;
+		margin-left: 0%;
+	}
+
+	div.ContentRow > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	.main-section > .outer-row	/* Removes the padding around the topic container in mobile */
+	{
+		padding: 0;
+	}
+
+	div.ContentRow > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.ContentRow > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+}
+
+p.Disclaimer
+{
+	mc-auto-number-format: '{b}DISCLAIMER  {/b}';
+}
+
+@media only screen and (max-width: 1000px)
+{
+	div.content-container	/*Wraps the content on the masterpage and provides the white background behind topics.*/
+	{
+		padding: 8px;
+	}
+
+	.main-section	/*This style applies the grey background. This HTML element is not on a master page, it is used at compile time.*/
+	{
+		background: #ffffff;
+	}
+}
+
+/*-- WELCOME PAGE --*/
+
+.n13-hd-01
+{
+	font-family: 'Lato';
+	font-weight: 300;
+	font-size: 50px;
+	line-height: 65px;
+	color: #fff;
+	display: block;
+	position: relative;
+	top: -80px;
+}
+
+.n13-hd-02
+{
+	font-family: 'Lato';
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 18px;
+	color: #fff;
+	display: block;
+	position: relative;
+	top: -80px;
+}
+
+@media only screen and (max-width: 780px)
+{
+	.n13-hd-01
+	{
+		font-family: 'Lato';
+		font-weight: 300;
+		font-size: 35px;
+		line-height: 38px;
+		color: #fff;
+		display: block;
+		position: relative;
+		top: -80px;
+	}
+
+	.n13-hd-02
+	{
+		font-family: 'Lato';
+		font-weight: 300;
+		font-size: 13px;
+		line-height: 18px;
+		color: #fff;
+		display: block;
+		position: relative;
+		top: -70px;
+	}
+}
+

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is my publish destination"
+  Host="10.18.1.20"
+  User="MyAccountId"
+  Password=""
+  Directory="inetpub\wwwroot"
+  Port="21"
+  ViewUrl=""
+  Type="ftp"
+  UploadLogFile="false"
+  ConnectionMode="Active"></CatapultDestination>

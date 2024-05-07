@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="MadCap HTML5 Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  DefaultUrl="/Content/Home.htm"
+  MasterToc="/Project/TOCs/help.fltoc"
+  ExcludeUnreferencedContent="false"
+  MasterPage="/Content/Resources/master-pages/other-topics.flmsp"
+  ConditionTagExpression="include[Primary.WindowsOnly] exclude[Primary.Delete_this or Primary.Internal_use or Primary.MacOnly] "
+  Skin="/Project/Skins/TopNavigationWin.flskn"
+  MenuSkin="/Project/Skins/SideMenu.flskn"
+  TopicToolbarSkin="/Project/Skins/TopicToolBar.flskn"
+  DisableAutoSync="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/win-destination.fldes" />
+  </Destinations>
+  <Variables>
+    <Variable
+      Name="Primary/Test_Variable">NVivo 12 for Windows</Variable>
+    <Variable
+      Name="Primary/Target_Product">NVivo 12 (Windows)</Variable>
+    <Variable
+      Name="Primary/Target_Update1">NVivo 12.1 (Windows)</Variable>
+    <Variable
+      Name="Primary/Target_Update2">NVivo 12.2 (Windows)</Variable>
+    <Variable
+      Name="Primary/Target_Update3">NVivo 12.3 (Windows)</Variable>
+  </Variables>
+</CatapultTarget>

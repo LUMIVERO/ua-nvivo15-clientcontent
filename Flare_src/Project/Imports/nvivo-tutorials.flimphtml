@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HtmlImport
+  ImportResourcesLocation="NoImport"
+  KeepSourceLinks="true"
+  SourceFolders=""
+  ImportTopics="specific"
+  LastImport="2020-03-30T12:06:28.3649504+11:00"
+  ImportTopicsLocation="Content/Tutorials/">
+  <Files>
+    <Url
+      Source="../../../../ua-pilbara-help/Content/tutorials/nvivo-tutorials.htm"
+      AbsoluteSource="file:///C:/Github/ua-pilbara-help/Content/tutorials/nvivo-tutorials.htm" />
+    <Url
+      Source="../../../../ua-pilbara-help/Content/tutorials/tutorial-01-intro-import.htm"
+      AbsoluteSource="file:///C:/Github/ua-pilbara-help/Content/tutorials/tutorial-01-intro-import.htm" />
+    <Url
+      Source="../../../../ua-pilbara-help/Content/tutorials/tutorial-02-organize.htm"
+      AbsoluteSource="file:///C:/Github/ua-pilbara-help/Content/tutorials/tutorial-02-organize.htm" />
+    <Url
+      Source="../../../../ua-pilbara-help/Content/tutorials/tutorial-03-explore.htm"
+      AbsoluteSource="file:///C:/Github/ua-pilbara-help/Content/tutorials/tutorial-03-explore.htm" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Tutorials/nvivo-tutorials.htm"
+      TimeStamp="30/03/2020 12:05:55 PM" />
+    <Url
+      Source="../../Content/Tutorials/tutorial-01-intro-import.htm"
+      TimeStamp="30/03/2020 12:05:55 PM" />
+    <Url
+      Source="../../Content/Tutorials/tutorial-02-organize.htm"
+      TimeStamp="30/03/2020 12:05:55 PM" />
+    <Url
+      Source="../../Content/Tutorials/tutorial-03-explore.htm"
+      TimeStamp="30/03/2020 12:05:55 PM" />
+    <Url
+      Source="../TOCs/nvivo-tutorials.fltoc"
+      TimeStamp="30/03/2020 12:06:28 PM" />
+  </GeneratedFiles>
+</HtmlImport>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultReportFile
+  Tables="files-with-variables,undefined-variables,broken-bookmarks,broken-links,broken-snippet-links,database-errors,undefined-glossary-terms,undefined-condition-tags"
+  Comment="This template includes all reports related to broken links or undefined items. Once the new report file is created, you can enable or disable any report from any group."></CatapultReportFile>

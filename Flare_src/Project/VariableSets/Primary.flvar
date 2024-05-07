@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Comment=""
+    Name="NVivo_Plus"
+    EvaluatedDefinition="NVivo 12 Plus">NVivo 12 Plus</Variable>
+  <Variable
+    Name="NVivo_Pro"
+    Comment=""
+    EvaluatedDefinition="NVivo 12 Pro">NVivo 12 Pro</Variable>
+  <Variable
+    Name="Target_Product"
+    Comment="This gets determined at the target level."
+    EvaluatedDefinition="Variable product name">Variable product name</Variable>
+  <Variable
+    Name="Ed_3_simple"
+    Comment=""
+    EvaluatedDefinition="Plus">Plus</Variable>
+  <Variable
+    Name="Target_Update1"
+    Comment="This gets determined at the target level."
+    EvaluatedDefinition="Variable product name for update 1">Variable product name for update 1</Variable>
+  <Variable
+    Name="Target_Update2"
+    Comment="This gets determined at the target level."
+    EvaluatedDefinition="Variable product name for update 2">Variable product name for update 2</Variable>
+  <Variable
+    Name="Target_Update3"
+    Comment="This gets determined at the target level."
+    EvaluatedDefinition="Variable product name for update 3">Variable product name for update 3</Variable>
+  <Variable
+    Name="NVivo_Transcription"
+    Comment="Uluru project product name"
+    EvaluatedDefinition="NVivo Transcription">NVivo Transcription</Variable>
+  <Variable
+    Name="myNVivo"
+    Comment="Uluru project account name"
+    EvaluatedDefinition="myNVivo">myNVivo</Variable>
+  <Variable
+    Name="NVivo"
+    Comment="Generic product name"
+    EvaluatedDefinition="NVivo">NVivo</Variable>
+  <Variable
+    Name="NVivo_20_Windows"
+    Comment=""
+    EvaluatedDefinition="NVivo 20 Windows">NVivo 20 Windows</Variable>
+  <Variable
+    Name="NVivo_20_Mac"
+    Comment=""
+    EvaluatedDefinition="NVivo 20 Mac">NVivo 20 Mac</Variable>
+  <Variable
+    Name="MS_Office_Addin"
+    Comment=""
+    EvaluatedDefinition="NVivo–Office Integration">NVivo–Office Integration</Variable>
+  <Variable
+    Name="Collaboration"
+    Comment=""
+    EvaluatedDefinition="Collaboration Cloud">Collaboration Cloud</Variable>
+  <Variable
+    Name="Detail_View"
+    Comment=""
+    EvaluatedDefinition="Detail View">Detail View</Variable>
+  <Variable
+    Name="Navigation_View"
+    Comment=""
+    EvaluatedDefinition="Navigation View">Navigation View</Variable>
+  <Variable
+    Name="List_View"
+    Comment=""
+    EvaluatedDefinition="List View">List View</Variable>
+</CatapultVariableSet>

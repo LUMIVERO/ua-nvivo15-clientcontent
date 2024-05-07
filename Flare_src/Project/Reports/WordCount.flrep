@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultReportFile
+  Tables="file-word-count"
+  Comment="This template includes all reports in the Condition Tags group. Once the new report file is created, you can enable or disable any report from any group."
+  Title="Word Count">
+  <Stylesheet />
+</CatapultReportFile>

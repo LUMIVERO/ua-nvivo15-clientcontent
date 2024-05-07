@@ -1,0 +1,3 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultProject Version="1" MasterStylesheetOverride="True" xml:lang="en-us" SourceControlBound="false" Comment="This template contains a minimum number of content and project files, including a single topic. It is the best choice for those who want to begin with a skeleton project." PreviewConditionalExpression="include[Primary.MacOnly] exclude[Primary.Delete_this or Primary.EditionsExample or Primary.Internal_use or Primary.Multimedia or Primary.PerpetualOnly or Primary.SubscriptionOnly or Primary.WindowsOnly or Primary.WindowsPerpetualOnly] ">
+</CatapultProject>

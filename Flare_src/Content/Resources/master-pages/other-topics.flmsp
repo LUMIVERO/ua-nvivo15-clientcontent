@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link MadCap:conditions="Primary.WindowsOnly" href="../images/favicon.png" rel="icon" />
+        <link MadCap:conditions="Primary.MacOnly" href="../images/faviconmac.png" rel="icon" />
+        <script src="https://use.fontawesome.com/870d120522.js">
+        </script>
+        <link href="../Stylesheets/default.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="content-container">
+            <div class="side-content">
+                <div id="page-toc">
+                </div>
+                <MadCap:relationshipsProxy />
+            </div>
+            <MadCap:breadcrumbsProxy />
+            <MadCap:bodyProxy />
+        </div>
+    </body>
+    <script type="text/javascript" src="../Scripts/page-toc.js">
+    </script>
+    <script MadCap:conditions="Primary.WindowsOnly">
+		/* <![CDATA[ */
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		// The below key is for NVivo 12 Windows //
+		ga('create', 'UA-6650726-28', 'auto');
+		ga('send', 'pageview');
+		// The purpose of the following code is to store the name of the current file to a variable.
+		// This is to be used later when we detect if the current page is a MadCap search page.
+
+		var file = document.location.href; // Get the full URL.
+		file = file.substring(0, (file.indexOf("#") == -1) ? file.length : file.indexOf("#")); // If it exists, remove an anchor after the file name.
+		file = file.substring(0, (file.indexOf("?") == -1) ? file.length : file.indexOf("?")); // If it exist, remove a query after the file name.
+		file = file.substring(file.lastIndexOf("/") + 1, file.length); // Remove the path leading up to the file name, leaving just the file name as a variable.
+
+		// This is where we detect if the user has loaded a MadCap search page.
+		// If so, we update the search query from MadCap style to GA style and send the search query to GA.
+		// If the user performs another search while on the search results page, we repeat the process.
+		// Now you're tracking user search terms in GA with your MadCap Flare output!
+
+		if (file === 'Search.htm') {
+		var newPath = document.location.pathname + document.location.search + document.location.hash;
+		newPath = newPath.replace(/#/, '?');
+		newPath = newPath.replace(/search\-/, 'q=');
+		ga('send', 'pageview', newPath);
+
+		$(window).on('hashchange', function() {
+		newPath = document.location.pathname + document.location.search + document.location.hash;
+		newPath = newPath.replace(/#/, '?');
+		newPath = newPath.replace(/search\-/, 'q=');
+		ga('send', 'pageview', newPath);
+		});
+
+		}
+			
+		/* ]]> */
+	</script>
+    <script MadCap:conditions="Primary.MacOnly">
+		/* <![CDATA[ */
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		// The below key is for NVivo 12 Mac Help //
+		ga('create', 'UA-6650726-29', 'auto');
+		ga('send', 'pageview');
+		// The purpose of the following code is to store the name of the current file to a variable.
+		// This is to be used later when we detect if the current page is a MadCap search page.
+
+		var file = document.location.href; // Get the full URL.
+		file = file.substring(0, (file.indexOf("#") == -1) ? file.length : file.indexOf("#")); // If it exists, remove an anchor after the file name.
+		file = file.substring(0, (file.indexOf("?") == -1) ? file.length : file.indexOf("?")); // If it exist, remove a query after the file name.
+		file = file.substring(file.lastIndexOf("/") + 1, file.length); // Remove the path leading up to the file name, leaving just the file name as a variable.
+
+		// This is where we detect if the user has loaded a MadCap search page.
+		// If so, we update the search query from MadCap style to GA style and send the search query to GA.
+		// If the user performs another search while on the search results page, we repeat the process.
+		// Now you're tracking user search terms in GA with your MadCap Flare output!
+
+		if (file === 'Search.htm') {
+		var newPath = document.location.pathname + document.location.search + document.location.hash;
+		newPath = newPath.replace(/#/, '?');
+		newPath = newPath.replace(/search\-/, 'q=');
+		ga('send', 'pageview', newPath);
+
+		$(window).on('hashchange', function() {
+		newPath = document.location.pathname + document.location.search + document.location.hash;
+		newPath = newPath.replace(/#/, '?');
+		newPath = newPath.replace(/search\-/, 'q=');
+		ga('send', 'pageview', newPath);
+		});
+
+		}
+			
+		/* ]]> */
+	</script>
+    
+</html>

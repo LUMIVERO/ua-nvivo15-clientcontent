@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IgnoredWordsDictionary>
+    <Word Comment="">uncode</Word>
+    <Word Comment="">mail/fax</Word>
+    <Word Comment="">Mail/Fax</Word>
+    <Word Comment="">workspacework</Word>
+    <Word Comment="">MVC</Word>
+    <Word>.csv</Word>
+    <Word>.doc</Word>
+    <Word>.docx</Word>
+    <Word>.enex</Word>
+    <Word>.htm</Word>
+    <Word>.kml</Word>
+    <Word>.kmz</Word>
+    <Word>.mpg</Word>
+    <Word>.mx3</Word>
+    <Word>.mx4</Word>
+    <Word>.mx5</Word>
+    <Word>.nvcx</Word>
+    <Word>.nvp</Word>
+    <Word>.nvpx</Word>
+    <Word>.nvr</Word>
+    <Word>.nvx</Word>
+    <Word>.odt</Word>
+    <Word>.pdf</Word>
+    <Word>.png</Word>
+    <Word>.qdc</Word>
+    <Word>.rtf</Word>
+    <Word>.sav</Word>
+</IgnoredWordsDictionary>

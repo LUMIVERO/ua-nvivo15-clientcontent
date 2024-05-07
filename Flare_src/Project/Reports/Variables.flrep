@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultReportFile
+  Tables="files-with-variables,topics-with-snippet-variables,undefined-variables,unused-variables,used-variables,variable-suggestions"
+  Comment="This template includes all reports in the Condition Tags group. Once the new report file is created, you can enable or disable any report from any group."></CatapultReportFile>

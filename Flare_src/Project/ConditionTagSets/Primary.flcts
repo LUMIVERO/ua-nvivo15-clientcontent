@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet>
+  <ConditionTag
+    BackgroundColor="#d8bfd8"
+    Name="MacOnly"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#7fffd4"
+    Name="WindowsOnly"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#9932cc"
+    Name="Internal_use"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff0012"
+    Name="Delete_this"
+    Comment="" />
+</CatapultConditionTagSet>

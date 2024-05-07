@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="MadCap HTML5 Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  DefaultUrl="/Content/Home.htm"
+  MasterToc="/Project/TOCs/help.fltoc"
+  ExcludeUnreferencedContent="false"
+  MasterPage="/Content/Resources/master-pages/other-topics.flmsp"
+  ConditionTagExpression="include[Primary.MacOnly] exclude[Primary.Delete_this or Primary.Internal_use or Primary.WindowsOnly] "
+  Skin="/Project/Skins/TopNavigationMac.flskn"
+  MenuSkin="/Project/Skins/SideMenu.flskn"
+  DisableAutoSync="true"
+  Medium="print">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/mac-destination.fldes" />
+  </Destinations>
+  <Variables>
+    <Variable
+      Name="Primary/Test_Variable">NVivo for Mac ( Version 12)</Variable>
+    <Variable
+      Name="Primary/Target_Product">NVivo 12 Mac</Variable>
+    <Variable
+      Name="Primary/Target_Update1">NVivo 12.1 (Mac)</Variable>
+    <Variable
+      Name="Primary/Target_Update2">NVivo 12.2 (Mac)</Variable>
+    <Variable
+      Name="Primary/Target_Update3">NVivo 12.3 (Mac)</Variable>
+  </Variables>
+</CatapultTarget>
