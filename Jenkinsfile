@@ -66,7 +66,7 @@ pipeline {
             }
         }
 
-        stage("Trigger CreateAndPushDeploymentPackage windows-help"){
+        stage("Trigger CreateAndPushDeploymentPackage mac-help"){
             steps{
                 build job: 'CreateAndPushDeploymentPackage', \
                 parameters: [string(name: 'PackageContentsSource', value: "${WORKSPACE}\\Flare_src\\Output\\jenkins\\mac-help"), \
