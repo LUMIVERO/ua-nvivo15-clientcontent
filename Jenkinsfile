@@ -88,9 +88,9 @@ pipeline {
         stage("Trigger DeployToTestEnvironment windows-help"){
             steps{
                 build job: 'DeployToTestEnvironment', \
-                parameters: [string(name: 'OctopusProjectName', value: 'NVivo 14 for Windows Client Content'), \
-                                string(name: 'ReleaseVersion', value: '${PACKAGE_VERSION}'), \
-                                string(name: 'EnvironmentName', value: 'content-test'), \
+                parameters: [string(name: 'OctopusProjectName', value: "NVivo 14 for Windows Client Content"), \
+                                string(name: 'ReleaseVersion', value: "${PACKAGE_VERSION}"), \
+                                string(name: 'EnvironmentName', value: "content-test"), \
                                 [$class: 'LabelParameterValue', name: 'BuildNode', label: "${env.NODE_NAME}" ]]
             }
         }
@@ -98,9 +98,9 @@ pipeline {
         stage("Trigger DeployToTestEnvironment mac-help"){
             steps{
                 build job: 'DeployToTestEnvironment', \
-                parameters: [string(name: 'OctopusProjectName', value: 'NVivo 14 for Mac Client Content'), \
-                                string(name: 'ReleaseVersion', value: '${PACKAGE_VERSION}'), \
-                                string(name: 'EnvironmentName', value: 'content-test'), \
+                parameters: [string(name: 'OctopusProjectName', value: "NVivo 14 for Mac Client Content"), \
+                                string(name: 'ReleaseVersion', value: "${PACKAGE_VERSION}"), \
+                                string(name: 'EnvironmentName', value: "content-test"), \
                                 [$class: 'LabelParameterValue', name: 'BuildNode', label: "${env.NODE_NAME}" ]]
             }
         }
