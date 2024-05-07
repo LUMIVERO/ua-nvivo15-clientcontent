@@ -12,7 +12,7 @@ pipeline {
     }
 
     environment {
-        PACKAGE_VERSION=15.0.0.${BUILD_NUMBER}
+        PACKAGE_VERSION="15.0.0.${BUILD_NUMBER}"
     }
 
     stages {
