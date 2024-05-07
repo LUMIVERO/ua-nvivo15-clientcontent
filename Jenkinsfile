@@ -34,7 +34,7 @@ pipeline {
 
                         # Copy external files into websites
                         Copy-Item .\\External_src\\welcome-screen\\win .\\Flare_src\\Output\jenkins\\windows-help\\Content\\welcome-screen -Recurse
-                        Copy-Item .\\External_src\\welcome-screen\\mac .\\Flare_src\Output\\jenkins\\mac-help\\Content\\welcome-screen -Recurse
+                        Copy-Item .\\External_src\\welcome-screen\\mac .\\Flare_src\\Output\\jenkins\\mac-help\\Content\\welcome-screen -Recurse
                     }
                     catch
                     {
