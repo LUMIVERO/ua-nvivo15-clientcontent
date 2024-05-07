@@ -33,7 +33,7 @@ pipeline {
                         .\\Invoke-FlareBuild.ps1 -FlareProjectFile .\\Flare_src\\NV_clientcontent.flprj -BatchTarget Both-mac-and-windows
 
                         # Copy external files into websites
-                        Copy-Item .\\External_src\\welcome-screen\\win .\\Flare_src\\Output\jenkins\\windows-help\\Content\\welcome-screen -Recurse
+                        Copy-Item .\\External_src\\welcome-screen\\win .\\Flare_src\\Output\\jenkins\\windows-help\\Content\\welcome-screen -Recurse
                         Copy-Item .\\External_src\\welcome-screen\\mac .\\Flare_src\\Output\\jenkins\\mac-help\\Content\\welcome-screen -Recurse
                     }
                     catch
