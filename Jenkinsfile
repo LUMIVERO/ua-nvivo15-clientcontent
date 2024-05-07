@@ -20,7 +20,7 @@ pipeline {
 
         stage('Build stage') {
             steps {
-                powershell """
+                powershell '''
                     # Remove any NuGet packages from previous builds
                     if (Test-Path -Path *.nupkg -Type Leaf)
                     {
@@ -43,7 +43,7 @@ pipeline {
                         # Ensure that the build fails
                         exit 1
                     }
-                """
+                '''
             }
         }
 
