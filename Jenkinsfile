@@ -13,7 +13,7 @@ pipeline {
         OCTOPUS_PROJECT_MAC="NVivo 15 for Mac Client Content"
         NUGET_PKG_WIN="nvivo15-win-clientcontent"
         NUGET_PKG_MAC="nvivo15-mac-clientcontent"
-        FLARE_PROJECT_NAME=".\\Flare_src\\NV_clientcontent.flprj"
+        FLARE_PROJECT_NAME=".\\Flare_src\\NV15_clientcontent.flprj"
     }
 
     stages {
