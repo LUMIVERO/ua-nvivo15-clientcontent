@@ -141,9 +141,11 @@ pipeline {
     post {
         always {
             script{
-                // Post  Build Steps to Archive the Build Files and Publish the Unit Test Reports
-                echo 'Post Build Activities'
-                archive '*.nupkg,*.zip'
+                if (env.BRANCH_NAME == 'master') {
+                    // Post  Build Steps to Archive the Build Files and Publish the Unit Test Reports
+                    echo 'Post Build Activities'
+                    archive '*.nupkg,*.zip'
+                }
             }
         }
     }
