@@ -17,8 +17,6 @@ pipeline {
     }
 
     stages {
-       
-
         stage('Build stage') {
             steps {
                 powershell '''
@@ -49,6 +47,7 @@ pipeline {
         }
 
         stage('Create windows and mac help packges') {
+            when { branch 'master' }
             stages{
                 stage("Trigger CreateAndPushDeploymentPackage for windows"){
                     steps{
@@ -81,6 +80,7 @@ pipeline {
         }
 
         stage("Deploy windows and mac help packges"){
+            when { branch 'master' }
             stages{
                 stage("Deploy to test environment for windows"){
                     steps{
@@ -141,9 +141,11 @@ pipeline {
     post {
         always {
             script{
-                // Post  Build Steps to Archive the Build Files and Publish the Unit Test Reports
-                echo 'Post Build Activities'
-                archive '*.nupkg,*.zip'
+                if (env.BRANCH_NAME == 'master') {
+                    // Post  Build Steps to Archive the Build Files and Publish the Unit Test Reports
+                    echo 'Post Build Activities'
+                    archive '*.nupkg,*.zip'
+                }
             }
         }
     }
