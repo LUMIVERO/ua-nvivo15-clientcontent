@@ -140,7 +140,6 @@ pipeline {
 
     post {
         always {
-            when { branch 'master' }
             script{
                 // Post  Build Steps to Archive the Build Files and Publish the Unit Test Reports
                 echo 'Post Build Activities'
